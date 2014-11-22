@@ -1,0 +1,4 @@
+# git ignore #
+*.log
+.DS_store
+/app/cache/*
