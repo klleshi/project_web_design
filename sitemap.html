@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="it">
+    <head>
+        <base href=".">
+        <!--[if IE]>
+            <script type="text/javascript">
+            // Fix for IE ignoring relative base tags.
+            // See http://stackoverflow.com/questions/3926197/html-base-tag-and-local-folder-path-with-internet-explorer
+            (function() {
+                var baseTag = document.getElementsByTagName('base')[0];
+                baseTag.href = baseTag.href;
+            })();
+            </script>
+        <![endif]-->  
+        <meta charset="utf-8">
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Titolo, descrizione, autore -->
+        <title>Regione Veneto</title>
+        <meta name="description" content="Informazioni sulla nostra regione Veneto">
+        <meta name="author" content="Studenti del corso di Web Design">
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script>
+            $(function () {
+                $("body").prepend('<nav id="NavBar" />');
+                $("#NavBar").load('navbar.html');
+            });
+        </script>
+        <!-- CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+        <link href="css/stileSite.css" rel="stylesheet">
+        <link href="css/media_query.css" rel="stylesheet">
+        <link href="css/media_print.css" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- breadcrumbs -->
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <!-- la pagina in qui ci troviamo -->
+                <li class="active">Indice dei contenuti</li>
+            </ol>
+        </div> <!-- ./breadcrumbs -->
+
+        <!-- Corpo della pagina -->
+        <div class="container">
+            <!-- Header della pagina -->
+            <div class="page-header">
+                <h2>
+                    Indice dei contenuti
+                </h2>
+            </div>
+            <div class="riga">
+                <div class="col-sm-2">
+                    <section class="panel panel-default">
+                        <header class="panel-heading">
+                            <div class="panel-title text-capitalize">
+                                La regione
+                            </div>
+                        </header>
+                        <article class="panel-body">
+                            <ul>
+                                <li><a href="regione/storia.html">Storia</a></li>
+                                <li><a href="regione/storia.html">Dialetto</a></li>
+                                <li><a href="regione/storia.html">Clima</a></li>
+                            </ul>
+                        </article>
+                    </section>
+                </div>          
+                <div class="col-sm-2">
+                    <section class="panel panel-default">
+                        <header class="panel-heading">
+                            <div class="panel-title text-capitalize">
+                                Dove
+                            </div>
+                        </header>
+                        <article class="panel-body">
+                            <ul>
+                                <li><a href="dove/venezia/">Venezia</a>
+                                    <ul>
+                                        <li><a href="cosaVisitare/musei_venezia.html">Musei</a></li>
+                                        <li><a href="cosaVisitare/musei_venezia.html">Chiese</a></li>
+                                        <li><a href="cosaVisitare/musei_venezia.html">Luoghi</a></li>
+                                        <li><a href="cosaVisitare/musei_venezia.html">Edifici storici</a></li>
+                                        <li><a href="cosaVisitare/musei_venezia.html">Mostre</a></li>
+                                        <li><a href="cosaVisitare/musei_venezia.html">Sagre</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="dove/venezia/">Padova</a></li>
+                                <li><a href="dove/venezia/">Verona</a></li>
+                                <li><a href="dove/venezia/">Treviso</a></li>
+                                <li><a href="dove/venezia/">Rovigo</a></li>
+                                <li><a href="dove/venezia/">Vicenza</a></li>
+                                <li><a href="dove/venezia/">Belluno</a></li>
+                            </ul>
+                        </article>
+                    </section>
+                </div>
+                <div class="col-sm-2">
+                    <section class="panel panel-default">
+                        <header class="panel-heading">
+                            <div class="panel-title text-capitalize">
+                                Cosa visitare
+                            </div>
+                        </header>
+                        <article class="panel-body">
+                            <ul>
+                                <li><a href="cosaVisitare/">Musei</a></li>
+                                <li><a href="cosaVisitare/">Chiese</a></li>
+                                <li><a href="cosaVisitare/">Luoghi</a></li>
+                                <li><a href="cosaVisitare/">Edifici storici</a></li>
+                                <li><a href="cosaVisitare/">Mostre</a></li>
+                                <li><a href="cosaVisitare/">Sagre</a></li>
+                            </ul>
+                        </article>
+                    </section>
+                </div>
+                <div class="col-sm-3">
+                    <section class="panel panel-default">
+
+                        <header class="panel-heading">
+                            <div class="panel-title text-capitalize">
+                                Che turista sei?
+                            </div>
+                        </header>
+                        <article class="panel-body">
+                            <ul>
+                                <li><a href="cheTuristaSei/solitario/">Singolo viaggiatore</a></li>
+                                <li><a href="cheTuristaSei/famiglia/">Con la famiglia</a></li>
+                                <li><a href="cheTuristaSei/studente/">Studente</a></li>
+                            </ul>
+                        </article>
+                    </section>
+                </div>
+                <div class="col-sm-3">
+                    <section class="panel panel-default">
+                        <header class="panel-heading">
+                            <div class="panel-title text-capitalize">
+                                varie
+                            </div>
+                        </header>
+                        <article class="panel-body">
+                            <ul>
+                                <li><a href="news.html">News</a></li>
+                                <li><a href="login/index.html">Login</a></li>
+                                <li><a href="login/forgotPassword.html">Hai dimenticato la password?</a></li>
+                                <li><a href="login/register.html">Registrati al sito</a></li>
+                            </ul>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div> <!-- /container>
+          
+        <!-- Footer -->
+       <footer class="my_footer">
+            <!-- Inseriamo una riga -->
+            <hr class="featurette-divider">        
+            <div class="container">      
+                <span> 
+                    <strong> Seguici su: </strong> 
+                    <a href="http://www.facebook.com"><span class="fa fa-facebook"><span>facebook</span></span></a>
+                    <a href="http://www.twitter.com"><span class="fa fa-twitter"><span>twitter</span></span></a>
+                </span>
+                &nbsp;&nbsp;&nbsp;
+                <span class="pull-right"> 
+                    TL-team 2014 - <a href="sitemap.html"> Indice dei contenuti </a>
+                    <a href="mailto:admin@domain.it"> Contattaci </a>
+                </span>  
+            </div>
+            <br>
+        </footer>
+
+        <!-- Script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <!-- css3-mediaqueries.js for IE less than 9 -->
+        <!--[if lt IE 9]>
+        <script 
+           src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js">
+        </script>
+        <![endif]-->
+
+    </body>
+</html>

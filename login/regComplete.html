@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="it">
+    <head>
+         <base href="../">
+        <!--[if IE]>
+            <script type="text/javascript">
+            // Fix for IE ignoring relative base tags.
+            // See http://stackoverflow.com/questions/3926197/html-base-tag-and-local-folder-path-with-internet-explorer
+            (function() {
+                var baseTag = document.getElementsByTagName('base')[0];
+                baseTag.href = baseTag.href;
+            })();
+            </script>
+        <![endif]-->  
+       <meta charset="utf-8">
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Titolo, descrizione, autore -->
+        <title>Regione Veneto</title>
+        <meta name="description" content="Informazioni sulla nostra regione Veneto">
+        <meta name="author" content="Studenti del corso di Web Design">
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script>
+            $(function () {
+                $("body").prepend('<nav id="NavBar" />');
+                $("#NavBar").load('navbar.html');
+                //gestori per i bottoni
+                $("#btnHome").click(function () {
+                    document.location.href = "index.html";
+                });
+            });
+        </script>
+        <!-- CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+        <link href="css/stileSite.css" rel="stylesheet">
+        <link href="css/media_query.css" rel="stylesheet">
+        <link href="css/media_print.css" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    </head> 
+
+    <body>
+        <!-- breadcrumbs -->
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>     
+                <!-- la pagina in qui ci troviamo -->
+                <li class="active">Registrazione nuovo utente</li>
+            </ol>
+        </div> <!-- ./breadcrumps -->
+
+        <!-- Corpo della pagina -->
+        <div class="container">
+            <!-- Header della pagina -->
+            <div class="page-header">
+                <h2>
+                    Fase 3: Nuovo account attivato
+                </h2>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <h3>Account attivato</h3>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <h3>Benvenuto nella community!</h3>
+                            hai completato con successo l'attivazione del nuovo account su questo sito
+                            <hr>
+                            <div class="controls">
+                                <button id="btnHome" class="btn btn-success">Torna alla home</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <aside class="col-sm-5">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="login/index.html">Login al sito</a></li>
+                        <li class="list-group-item"><a href="login/forgotPassword.html">Recupero password</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div> <!-- /container>
+          
+        <!-- Footer -->
+       <footer class="my_footer">
+            <!-- Inseriamo una riga -->
+            <hr class="featurette-divider">        
+            <div class="container">      
+                <span> 
+                    <strong> Seguici su: </strong> 
+                    <a href="http://www.facebook.com"><span class="fa fa-facebook"><span>facebook</span></span></a>
+                    <a href="http://www.twitter.com"><span class="fa fa-twitter"><span>twitter</span></span></a>
+                </span>
+                &nbsp;&nbsp;&nbsp;
+                <span class="pull-right"> 
+                    TL-team 2014 - <a href="sitemap.html"> Indice dei contenuti </a>
+                    <a href="mailto:admin@domain.it"> Contattaci </a>
+                </span>  
+            </div>
+            <br>
+        </footer>
+
+        <!-- Script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="../../js/bootstrap.js"></script>
+        <!-- css3-mediaqueries.js for IE less than 9 -->
+        <!--[if lt IE 9]>
+        <script 
+           src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js">
+        </script>
+        <![endif]-->
+    </body>
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="it">
+    <head>
+        <base href="../">
+        <!--[if IE]>
+            <script type="text/javascript">
+            // Fix for IE ignoring relative base tags.
+            // See http://stackoverflow.com/questions/3926197/html-base-tag-and-local-folder-path-with-internet-explorer
+            (function() {
+                var baseTag = document.getElementsByTagName('base')[0];
+                baseTag.href = baseTag.href;
+            })();
+            </script>
+        <![endif]-->  
+        <meta charset="utf-8">
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Titolo, descrizione, autore -->
+        <title>Regione Veneto</title>
+        <meta name="description" content="Informazioni sulla nostra regione Veneto">
+        <meta name="author" content="Studenti del corso di Web Design">
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script>
+            $(function () {
+                $("body").prepend('<nav id="NavBar" />');
+                $("#NavBar").load('navbar.html');
+            });
+        </script>
+        <!-- CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+        <link href="css/stileSite.css" rel="stylesheet">
+        <link href="css/media_query.css" rel="stylesheet">
+        <link href="css/media_print.css" rel="stylesheet">
+         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+   </head> 
+
+    <body>
+        <!-- breadcrumbs -->
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>     
+                <!-- la pagina in qui ci troviamo -->
+                <li class="active">Login</li>
+            </ol>
+        </div> <!-- ./breadcrumps -->
+
+        <!-- Corpo della pagina -->
+        <div class="container">
+            <!-- Header della pagina -->
+            <div class="page-header">
+                <h2>
+                    Inserisci i dati di login
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-9">
+                    <form class="form-horizontal" id="frmLogin">
+                        <fieldset>
+                            <!-- Text input-->
+                            <div class="control-group">
+                                <label class="control-label" for="textinput">User name</label>
+                                <div class="controls">
+                                    <input id="textinput" name="textinput" placeholder="" class="input-xlarge" type="text">
+
+                                </div>
+                            </div>
+
+                            <!-- Password input-->
+                            <div class="control-group">
+                                <label class="control-label" for="passwordinput">Password</label>
+                                <div class="controls">
+                                    <input id="passwordinput" name="passwordinput" placeholder="" class="input-xlarge" type="password">
+
+                                </div>
+                            </div>
+
+                            <!-- Button (Double) -->
+                            <div class="control-group">
+                                <label class="control-label" for="btnSubmit"></label>
+                                <div class="controls">
+                                    <input type="submit" id="btnSubmit" value="Inoltra" class="btn btn-success">
+                                    <input type="reset" id="btnReset" value="Cancella campi" class="btn btn-warning">
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    </form>
+
+                </div>
+                <aside class="col-sm-3">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="login/forgotPassword.html">Hai dimenticato la password?</a></li>
+                        <li class="list-group-item"><a href="login/register.html">Registrati al sito</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div> <!-- /container>
+          
+        <!-- Footer -->
+       <footer class="my_footer">
+            <!-- Inseriamo una riga -->
+            <hr class="featurette-divider">        
+            <div class="container">      
+                <span> 
+                    <strong> Seguici su: </strong> 
+                    <a href="http://www.facebook.com"><span class="fa fa-facebook"><span>facebook</span></span></a>
+                    <a href="http://www.twitter.com"><span class="fa fa-twitter"><span>twitter</span></span></a>
+                </span>
+                &nbsp;&nbsp;&nbsp;
+                <span class="pull-right"> 
+                    TL-team 2014 - <a href="sitemap.html"> Indice dei contenuti </a>
+                    <a href="mailto:admin@domain.it"> Contattaci </a>
+                </span>  
+            </div>
+            <br>
+        </footer>
+
+        <!-- Script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="../../js/bootstrap.js"></script>
+        <!-- css3-mediaqueries.js for IE less than 9 -->
+        <!--[if lt IE 9]>
+        <script 
+           src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js">
+        </script>
+        <![endif]-->
+    </body>
+</html>

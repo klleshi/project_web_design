@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="it">
+    <head>
+        <base href=".">
+        <!--[if IE]>
+            <script type="text/javascript">
+            // Fix for IE ignoring relative base tags.
+            // See http://stackoverflow.com/questions/3926197/html-base-tag-and-local-folder-path-with-internet-explorer
+            (function() {
+                var baseTag = document.getElementsByTagName('base')[0];
+                baseTag.href = baseTag.href;
+            })();
+            </script>
+        <![endif]-->  
+        <meta charset="utf-8">
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--disabilito la modalità compatibilità di IE, che fa più danni che altro -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Titolo, descrizione, autore -->
+        <title>Regione Veneto</title>
+        <meta name="description" content="Informazioni sulla nostra regione Veneto">
+        <meta name="author" content="Studenti del corso di Web Design">
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $("body").append('<nav id="NavBar" />');
+                $("#NavBar").load('navbar.html');
+            });
+        </script>
+        <!-- CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+        <link href="css/stileSite.css" rel="stylesheet">
+        <link href="css/media_query.css" rel="stylesheet">
+        <link href="css/media_print.css" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <!-- Carousel-->
+        <div id="myCarousel" class="carousel slide">
+            <!-- Indicatori di posizione -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+            </ol>
+
+            <!-- La classe carousel-inner si occupa di tutto ciò che è dentro il carousel -->
+            <div class="carousel-inner">
+
+                <!-- Prima slide -->
+                <div class="item active">
+                    <!-- inseriamo l'immagine e il testo alternativo -->
+                    <img src="img/venezia.jpg" alt="Welcome to Venice">
+                    <!-- Inseriamo un container per inserire il testo e le discalia -->
+                    <div class="container">
+                        <!-- Inseriamo la didascalia -->
+                        <div class="carousel-caption">
+                            <!-- Testo -->         
+                            <h1><em>La città di Venezia</em> </h1>        
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seconda slide -->
+                <div class="item">
+                    <!-- Inseriamo l'immagine -->
+                    <img src="img/padova.jpg" alt="Welcome to Padova">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1> <em>La città di Padova</em> </h1> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terza slide -->
+                <div class="item">
+                    <!-- Inseriamo l'immagine -->
+                    <img src="img/verona.jpg" alt="Welcome to Verona">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1> <em>La città di Verona</em> </h1> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quarta slide -->
+                <div class="item">
+                    <!-- Inseriamo l'immagine -->
+                    <img src="img/treviso.jpg" alt="Welcome to Treviso">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1> <em>La città di Treviso</em> </h1> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quinta slide -->
+                <div class="item">
+                    <!-- Inseriamo l'immagine -->
+                    <img src="img/vicenza.jpg" alt="Welcome to Vicenza">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1> <em>La città di Vicenza</em> </h1> 
+                        </div>
+                    </div>
+                </div>
+                <!-- Sesta slide -->
+                <div class="item">
+                    <!-- Inseriamo l'immagine -->
+                    <img src="img/rovigo.jpg" alt="Welcome to Rovigo">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1> <em>La città di Rovigo</em> </h1> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Settima slide -->
+                <div class="item">
+                    <!-- Inseriamo l'immagine -->
+                    <img src="img/belluno.jpg" alt="Welcome to Belluno">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1> <em>La città di Belluno</em> </h1> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pulsanti -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div> <!-- /.carousel -->
+
+
+        <!-- Corpo della pagina -->
+        <div class="container" id="my_homepage">
+            <!-- Header della pagina -->
+            <div class="page-header">
+                <h1>Benvenuti nella regione Veneto, mille motivi per visitarla</h1>
+            </div>
+            <!-- Inseriamo una riga -->
+            <div class="row">
+                <!--Inseriamo una colonna col-sm-8-->
+                <div class="col-sm-8 main-content">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>
+                                <strong>Venezia</strong> dolor sit amet, consectetur adipiscing elit. Aenean nec metus lacu
+                                egetlorem convallis, mollis felis faucibus, tempor eros. Aliquam dignissim commodo magna,
+                                in orci semper eu. Sed sit amet nibh vel eros mollis semper. Etiam magna est, mattis ut 
+                                dignissim hendrerit, placerat ac tortor. <strong>Padova</strong> nisl. Aliquam non consectetur
+                                augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam pulvinar consequat
+                                in orci semper eu. Sed sit amet nibh vel eros <strong>Treviso</strong>. Etiam magna est, 
+                                dignissim hendrerit, placerat ac tortor. Aenean at fermentum nisl. Aliquam non consectetur
+                                loremin orci semper eu. Sed sit amet nibh vel eros <strong>Treviso</strong>. Etiam magna est, 
+                                dignissim hendrerit, placerat ac tortor. Aenean at fermentum nisl. Aliquam non consectetur
+                                lorem
+                            </p>
+                        </div>
+                    </div>
+                    <hr class="featurette-divider">
+                    <div class="row">
+                        <h2>Ultime notizie</h2>
+                        <div class="col-sm-4">
+                            <div class="panel panel-primary">
+                                <!-- Inseriamo il titolo del panello -->
+                                <div class="panel-heading"> 
+                                    <h3 class="panel-title">Notizia 1</h3>
+                                </div>
+                                <!-- Inseriamo il body del panello-->
+                                <div class="panel-body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepteur sint occaecat cupidatat non proident, sunt in.
+                                    </p>
+                                    <p><a href="dove/venezia/museo_1.html">Dettagli..</a></p>
+                                </div>
+                            </div>
+                        </div>  
+
+                        <div class="col-sm-4">
+                            <div class="panel panel-primary">
+                                <!-- Inseriamo il titolo del panello -->
+                                <div class="panel-heading"> 
+                                    <h3 class="panel-title">Notizia 2</h3>
+                                </div>
+                                <!-- Inseriamo il body del panello-->
+                                <div class="panel-body">
+                                    <p>
+                                        Lorem ipsum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..
+                                    </p>
+                                    <p><a href="dove/venezia/museo_1.html">Dettagli..</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="panel panel-primary">
+                                <!-- Inseriamo il titolo del panello -->
+                                <div class="panel-heading"> 
+                                    <h3 class="panel-title">Notizia 3</h3>
+                                </div>
+                                <!-- Inseriamo il body del panello-->
+                                <div class="panel-body">
+                                    <p>
+                                        Lorem ipsum dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                                    </p>
+                                    <p><a href="dove/venezia/museo_1.html">Dettagli..</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a class="pull-left label label-primary" href="news.html">Tutte le news..</a>
+                        </div>
+                    </div><br>
+                </div> <!-- /colonna sm-8-->
+                
+                <!--Inseriamo la seconda colonna col-sm-4-->
+                <aside class="col-sm-4">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-info">Eventi del momento</li>
+                                <li class="list-group-item">
+                                    <span class="label label-info pull-right">06/11/2015</span>
+                                    <h5 class="list-group-item-heading">
+                                        <a href="cosaVisitare/sagra_1.html">
+                                            <strong>Festa dei marroni a Combai </strong>
+                                        </a>
+                                    </h5>
+                                    <h6 class="list-group-item-text">
+                                        <span>
+                                            Lorem ipsum dolor sit amet,  ...
+                                        </span>
+                                        <a class="pull-right" href="cosaVisitare/sagra_1.html">dettagli..</a>
+                                    </h6> 
+
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="label label-info pull-right">06/03/2014</span>
+                                    <h5 class="list-group-item-heading">
+                                        <a href="#">
+                                            <strong>Sagra dell'asparago a Borbiago</strong>
+                                        </a>
+                                    </h5>
+                                    <h6 class="list-group-item-text">
+                                        <span>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor sed do eiusmod tempor incididunt ut labore et dolore magna ...
+                                        </span>
+                                        <a class="pull-right" href="#">dettagli..</a>
+                                    </h6> 
+
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="label label-info pull-right">06/03/2014</span>
+                                    <h5 class="list-group-item-heading ">
+                                        <a href="#">
+                                            <strong>Il Caravaggio a Venezia</strong>
+                                        </a>
+                                    </h5>
+                                    <h6 class="list-group-item-text">
+                                        <span>
+                                            Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore magna ...
+                                        </span>
+                                        <a class="pull-right" href="#">dettagli..</a>
+                                    </h6> 
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>          
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="panel panel-default panel-cloud">
+                                <!-- Inseriamo il titolo del panello -->
+                                <div class="panel-heading"> 
+                                    <h3 class="panel-title">Tag cloud</h3>
+                                </div>
+                                <!-- Inseriamo il body del panello-->
+                                <div class="panel-body">
+                                    <h1><a href="ricerca_tag.html"> venezia </a></h1>
+                                    <h3><a href="ricerca_tag.html"> musei </a></h3>
+                                    <h2><a href="ricerca_tag.html"> opere d'arte </a> </h2>
+                                    <h2><a href="ricerca_tag.html"> verona </a></h2> 
+                                    <h1><a href="ricerca_tag.html"> padova </a></h1> 
+                                    <h3><a href="ricerca_tag.html"> treviso </a></h3>
+                                    <h5><a href="ricerca_tag.html"> belluno </a></h5>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>                   
+
+                </aside> <!-- /col-sm-4-->
+
+            </div>
+        </div> <!-- /container-->
+        
+        
+        <!-- Footer -->
+        <footer class="my_footer">
+            <!-- Inseriamo una riga -->
+            <hr class="featurette-divider">        
+            <div class="container">      
+                <span> 
+                    <strong> Seguici su: </strong> 
+                    <a href="http://www.facebook.com"><span class="fa fa-facebook"><span>facebook</span></span></a>
+                    <a href="http://www.twitter.com"><span class="fa fa-twitter"><span>twitter</span></span></a>
+                </span>
+                &nbsp;&nbsp;&nbsp;
+                <span class="pull-right"> 
+                    TL-team 2014 - <a href="sitemap.html"> Indice dei contenuti </a>
+                    <a href="mailto:admin@domain.it"> Contattaci </a>
+                </span>  
+            </div>
+            <br>
+        </footer>
+
+        <!-- Script -->
+        <script src="js/bootstrap.js"></script>
+        <!-- css3-mediaqueries.js for IE less than 9 -->
+        <!--[if lt IE 9]>
+        <script 
+           src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js">
+        </script>
+        <![endif]-->
+    </body>
+</html>

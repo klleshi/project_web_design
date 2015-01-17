@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="it">
+    <head>
+        <base href="../">
+        <!--[if IE]>
+            <script type="text/javascript">
+            // Fix for IE ignoring relative base tags.
+            // See http://stackoverflow.com/questions/3926197/html-base-tag-and-local-folder-path-with-internet-explorer
+            (function() {
+                var baseTag = document.getElementsByTagName('base')[0];
+                baseTag.href = baseTag.href;
+            })();
+            </script>
+        <![endif]-->  
+        <meta charset="utf-8">
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Titolo, descrizione, autore -->
+        <title>Regione Veneto</title>
+        <meta name="description" content="Informazioni sulla nostra regione Veneto">
+        <meta name="author" content="Studenti del corso di Web Design">
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script>
+            $(function () {
+                $("body").prepend('<nav id="NavBar" />');
+                $("#NavBar").load('navbar.html');
+            });
+        </script>
+        <!-- CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+        <link href="css/stileSite.css" rel="stylesheet">
+        <link href="css/media_query.css" rel="stylesheet">
+        <link href="css/media_print.css" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- breadcrumbs -->
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <!-- la pagina in qui ci troviamo -->
+                <li class="active">Regione: Clima</li>
+            </ol>
+        </div> <!-- ./breadcrumbs -->
+
+        <!-- Corpo della pagina -->
+        <div class="container">
+            <!-- Header della pagina -->
+            <div class="page-header">
+                <h1>
+                    Clima
+                </h1>
+            </div>
+
+            <p>Dal clima freddo delle Dolomiti arriviamo a quello mite della costa adriatica, il Veneto riassume in una superficie di poco superiore ai 18.000 km&sup2; le temperature dell'Europa.</p>
+
+            <p>Il clima del Veneto &egrave; di tipo sub-continentale, ma con l'agente mitigante del mare e la catena delle Alpi a proteggerlo dai venti del nord, si presenta complessivamente temperato.</p>
+
+            <p>Tra le zone climatiche principali troviamo: la regione alpina, caratterizzata da estati fresche e temperature rigide in inverno con frequenti nevicate, la fascia collinare e parte di quella pianeggiante dove il clima &egrave; pi&ugrave; mite, la maggior parte della pianura dove invece il clima &egrave; di tipo pi&ugrave; continentale (inverni relativamente freddi e umidi, estati calde e afose).</p>
+
+            <p>Il lago di Garda fa caso a s&eacute;: grazie ad un clima assai mite, lo si pu&ograve; apprezzare in tutti i mesi dell'anno, ed ha anche caratteristiche subtropicali.</p>
+        </div> <!-- /container>
+          
+        <!-- Footer -->
+        <footer class="my_footer">
+            <!-- Inseriamo una riga -->
+            <hr class="featurette-divider">        
+            <div class="container">      
+                <span> 
+                    <strong> Seguici su: </strong> 
+                    <a href="http://www.facebook.com"><span class="fa fa-facebook"><span>facebook</span></span></a>
+                    <a href="http://www.twitter.com"><span class="fa fa-twitter"><span>twitter</span></span></a>
+                </span>
+                &nbsp;&nbsp;&nbsp;
+                <span class="pull-right"> 
+                    TL-team 2014 - <a href="sitemap.html"> Indice dei contenuti </a>
+                    <a href="mailto:admin@domain.it"> Contattaci </a>
+                </span>  
+            </div>
+            <br>
+        </footer>
+
+        <!-- Script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="../../js/bootstrap.js"></script>
+    </body>
+</html>

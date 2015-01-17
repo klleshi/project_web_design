@@ -1,0 +1,111 @@
+body{
+    margin-top: 50px;
+}
+
+.carousel {
+    margin-bottom: 40px; margin-top: 50px;
+}
+.carousel-caption {
+    z-index: 10;
+}
+.breadcrumb {
+    margin-top: 0px; margin-bottom: -10px;
+}
+.marketing .col-sm-4 {
+    text-align: center;
+} 
+
+.panel-cloud h1, .panel-cloud h2, .panel-cloud h3, .panel-cloud h4, .panel-cloud h5 {
+    display: inline;
+}
+.img_lingua {
+    max-height: 30px; max-width: 30px;
+}
+.my_footer {
+    background-color: #000033;
+    color: #ffffff;
+}
+footer a{
+    color:#46b8da;
+}
+
+.container_img {
+    max-width: 50%; max-height: 50%;
+    float: right;
+    margin-left: 10px; margin-bottom: 10px;
+}
+.container_img2 {
+    max-width: 100%; max-height: 100%;
+}
+.container_img3 {
+    max-width: 150px; max-height: 150px;
+    float: right;
+    margin-left: 10px; margin-bottom: 10px;
+}
+.my_span {
+  color: #ffffff;
+  background-color: #5bc0de;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  border-color: #46b8da;
+  padding: 5px 5px;   
+}
+div.bandiera{
+    display: inline;
+}
+div.bandiera img{
+    height: 22px;
+    margin-top: 15px;
+}
+
+#ricerca{
+}
+#ricerca.form-control{
+    size:15em;
+}
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+.navbar-left{
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+.navbar{
+    color:#888;
+}
+
+article ul ul{
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+.img_social {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+footer .fa-facebook span, footer .fa-twitter span{
+    display: none;
+}
+
+footer .fa-facebook , footer .fa-twitter {
+    font-size: 2em;
+}

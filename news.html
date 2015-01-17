@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="it">
+    <head>
+        <base href=".">
+        <!--[if IE]>
+            <script type="text/javascript">
+            // Fix for IE ignoring relative base tags.
+            // See http://stackoverflow.com/questions/3926197/html-base-tag-and-local-folder-path-with-internet-explorer
+            (function() {
+                var baseTag = document.getElementsByTagName('base')[0];
+                baseTag.href = baseTag.href;
+            })();
+            </script>
+        <![endif]-->  
+        <meta charset="utf-8">
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Titolo, descrizione, autore -->
+        <title>Regione Veneto</title>
+        <meta name="description" content="Informazioni sulla nostra regione Veneto">
+        <meta name="author" content="Studenti del corso di Web Design">
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script>
+            $(function () {
+                $("body").prepend('<nav id="NavBar" />');
+                $("#NavBar").load('navbar.html');
+            });
+        </script>
+        <!-- CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/stileSite.css" rel="stylesheet">
+        <link href="css/media_query.css" rel="stylesheet">
+        <link href="css/media_print.css" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- breadcrumbs -->
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <!-- la pagina in qui ci troviamo -->
+                <li class="active">Notizie</li>
+            </ol>
+        </div> <!-- ./breadcrumbs -->
+
+        <!-- Corpo della pagina -->
+        <div class="container">
+            <!-- Header della pagina -->
+            <div class="page-header">
+                <h1>
+                    Ultime notizie
+                </h1>
+            </div>
+
+            <!--Inseriamo una riga-->
+            <div class="row">
+                <!--Inseriamo la prima colonna-->
+                <div class="col-sm-8 main-content">
+                    <!--Ineseriamo una riga per il primo contenuto-->
+                    <div class="row">
+                        <div class="col-sm-12">        
+                            <div>
+                                <div class="container_img"> 
+                                    <!--Immagine-->
+                                    <a href="cosaVisitare/sagra_1.html">
+                                        <img class="img-responsive" src="img/marroni_t.jpg" alt="Museo archeologico nazionale di Venezia">
+                                    </a>
+                                </div>  
+                                <!--Testo-->
+                                <h3>Festa dei marroni a Combai</h3>
+                                <p>          
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec metus lacus.
+                                    Vivamus eget lorem convallis, mollis felis faucibus, tempor eros. Aliquam dignissim
+                                    commodo magna, in lacinia orci semper eu. Sed sit amet nibh vel eros mollis semLorem 
+                                    ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec metus lacus. 
+                                    Vivamus eget lorem convallis, mollis felis faucibus, tempor eros. Aliquam 
+                                </p>
+                                <p>
+                                    <a href="cosaVisitare/sagra_1.html">
+                                        <button type="button" class="btn btn-info btn-sm">Ulteriori informazioni</button></a>
+                                </p>
+                            </div>
+                        </div>                  
+                    </div>
+                    <hr>
+
+                    <!--Inseriamo il secondo contenuto-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div>
+                                <!--Immagine-->
+                                <div class="container_img">
+                                    <a href="dove/venezia/museo_1.html">
+                                        <img class="img-responsive" src="img/fondaco-turchi22-274x180.jpg" alt="Turchi"></a>
+                                </div>
+                                <!--Testo--> 
+                                <h3>Articolo 2</h3>
+                                <p>
+                                    Vestibulum scelerisque scelerisque diam at lacinia. Donec posuere risus libero,
+                                    lacinia sollicitudin neque tincidunt et. In hac habitasse platea dictumst. Morbi id
+                                    massa a erat volutpat vehicula eu sed quam. Vivamus sed diam sollicitudin, viverra  
+                                    dolor a, facilisis nulla. Aliquam erat volutpat. Pellentesque vel odio id urna 
+                                    accumsan dignissim ut sed nisl. Mauris sem ipsum, porttitor et odio in, pharetra 
+                                    porttitor libero.
+                                </p>
+                                <p>
+                                    <a href="dove/venezia/museo_1.html">
+                                        <button type="button" class="btn btn-info btn-sm">Ulteriori informazioni</button></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!--Inseriamo il terzo contenuto-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div>
+                                <!--Immagine-->
+                                <div class="container_img">
+                                    <a href="dove/venezia/museo_1.html">
+                                        <img class="img-responsive" src="img/museo-del-vetro-murano-venezia-274x180.jpg" alt="Museo del vetro"></a>
+                                </div>
+                                <!--Testo-->
+                                <h3>Articolo 3</h3>
+                                <p>
+                                    Praesent et velit sed nisl aliquet accumsan ac eget libero. Vestibulum ac
+                                    ullamcorper ipsum, bibendum rutrum sem. Curabitur eu ante metus. Etiam eros lectus,
+                                    lacinia nec aliquam nec, viverra nec ante. Mauris mollis ullamcorper urna, a auctor
+                                    ex tincidunt at. Nulla vel mauris felis. Fusce malesuada, tortor ac malesuada
+                                    sollicitudin, purus velit consequat risus, sit amet cursus est justo ut mi. Aenean
+                                    vel tincidunt orci, nec aliquet ex. Morbi venenatis felis semper tortor tristique
+                                    blandit. Phasellus nunc tortor, varius
+                                </p>
+                                <p>
+                                    <a href="dove/venezia/museo_1.html">
+                                        <button type="button" class="btn btn-info btn-sm">Ulteriori informazioni</button></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <ul class="pagination">
+                        <li><a>&laquo;</a></li>
+                        <li class="active"><a>1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a>&raquo;</a></li>
+                    </ul>
+
+                </div>
+
+                <!--Inseriamo la seconda colonna-->
+                <aside class="col-sm-4">
+                    <div class="row" id="tag-cloud">
+                        <div class="col-sm-12">
+                            <div class="panel panel-default panel-cloud">
+                                <!-- Inseriamo il titolo del panello -->
+                                <div class="panel-heading"> 
+                                    <h3 class="panel-title">Tag cloud</h3>
+                                </div>
+                                <!-- Inseriamo il body del panello-->
+                                <div class="panel-body">
+                                    <h1><a href="ricerca_tag.html"> venezia </a></h1>
+                                    <h3><a href="ricerca_tag.html"> musei </a></h3>
+                                    <h2><a href="ricerca_tag.html"> opere d'arte </a> </h2>
+                                    <h2><a href="ricerca_tag.html"> verona </a></h2> 
+                                    <h1><a href="ricerca_tag.html"> padova </a></h1> 
+                                    <h3><a href="ricerca_tag.html"> treviso </a></h3>
+                                    <h5><a href="ricerca_tag.html"> belluno </a></h5>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>  <!-- /tag cloud -->               
+                </aside> <!--/Secondo colonna-->
+            </div> <!--/row-->
+
+
+        </div> <!--/container-->
+
+
+
+        <!-- Footer -->
+        <footer class="my_footer">
+            <!-- Inseriamo una riga -->
+            <hr class="featurette-divider">        
+            <div class="container">      
+                <span> 
+                    <strong> Seguici su: </strong> 
+                    <a href="http://www.facebook.com"><span class="fa fa-facebook"><span>facebook</span></span></a>
+                    <a href="http://www.twitter.com"><span class="fa fa-twitter"><span>twitter</span></span></a>
+                </span>
+                &nbsp;&nbsp;&nbsp;
+                <span class="pull-right"> 
+                    TL-team 2014 - <a href="sitemap.html"> Indice dei contenuti </a>
+                    <a href="mailto:admin@domain.it"> Contattaci </a>
+                </span>  
+            </div>
+            <br>
+        </footer>
+
+        <!-- Script -->
+        <script src="js/bootstrap.js"></script>
+        <!-- css3-mediaqueries.js for IE less than 9 -->
+        <!--[if lt IE 9]>
+        <script 
+           src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js">
+        </script>
+        <![endif]-->
+
+    </body>
+</html>
